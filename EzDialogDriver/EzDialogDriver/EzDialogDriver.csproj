@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>EzDialogDriver</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="5.1.0" />
+    <PackageReference Include="Prism.DryIoc" Version="9.0.537" />
+    <PackageReference Include="ReactiveProperty.WPF" Version="9.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EzDialogDriver.Core\EzDialogDriver.Core.csproj" />
+    <ProjectReference Include="..\Modules\EzDialogDriver.Modules.ModuleName\EzDialogDriver.Modules.ModuleName.csproj" />
+    <ProjectReference Include="..\Services\EzDialogDriver.Services.Interfaces\EzDialogDriver.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\EzDialogDriver.Services\EzDialogDriver.Services.csproj" />
+  </ItemGroup>
+</Project>
